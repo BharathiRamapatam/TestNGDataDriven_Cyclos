@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cyclos TestNG Project">
+
+<listeners>
+    <listener class-name="com.cyclos.listener.TestsListenerAdapter" />
+</listeners>
+
+
+<test name="suie 1 data driven com.cyclos.tests">
+
+   
+    <classes>
+        <class name="com.cyclos.suite1.DataDrivenTests" ></class>  
+    </classes>
+</test>
+<test name="suie 1 homePage">
+    <classes>
+        <class name="com.cyclos.suite1.Home_Page" ></class>  
+    </classes>
+</test>
+<test name="suie 1 pay user com.cyclos.tests">
+    <classes>
+        <class name="com.cyclos.suite1.PayUser_Page" ></class>  
+    </classes>
+ </test>
+ 
+ <test name="suie 2 data driven com.cyclos.tests">
+    <classes>
+        <class name="com.cyclos.suite2.SearchUserDataDrivenTest" ></class>  
+    </classes>
+ </test>
+    
+<test name="suie 2 data driven com.cyclos.invaidLogin">
+    <classes>
+        <class name="com.cyclos.suite2.InvalidLoginParaMeter" ></class>  
+    </classes>
+</test>
+
+<test name="suie 2 data driven com.cyclos.Personal_Page">
+    <classes>
+        <class name="com.cyclos.suite2.Personal_Page" ></class>  
+    </classes>
+</test>
+
+
+
+
+
+
+
+</suite>

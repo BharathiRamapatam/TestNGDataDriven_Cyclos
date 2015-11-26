@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Cyclos TestNG Project]">
+  <listeners>
+    <listener class-name="com.cyclos.listener.TestsListenerAdapter"/>
+  </listeners>
+  <test name="suie 1 data driven com.cyclos.tests(failed)">
+    <classes>
+      <class name="com.cyclos.suite1.DataDrivenTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="anotherTest"/>
+          <include name="payment_to_contact"/>
+        </methods>
+      </class> <!-- com.cyclos.suite1.DataDrivenTests -->
+      <class name="com.cyclos.suite2.Personal_Page">
+        <methods>
+          <include name="initialise"/>
+        </methods>
+      </class> <!-- com.cyclos.suite2.Personal_Page -->
+    </classes>
+  </test> <!-- suie 1 data driven com.cyclos.tests(failed) -->
+  <test name="suie 1 homePage(failed)">
+    <classes>
+      <class name="com.cyclos.suite2.Personal_Page">
+        <methods>
+          <include name="initialise"/>
+        </methods>
+      </class> <!-- com.cyclos.suite2.Personal_Page -->
+      <class name="com.cyclos.suite1.DataDrivenTests">
+        <methods>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.cyclos.suite1.DataDrivenTests -->
+      <class name="com.cyclos.suite1.Home_Page">
+        <methods>
+          <include name="checkResponce"/>
+          <include name="checkForLinks"/>
+        </methods>
+      </class> <!-- com.cyclos.suite1.Home_Page -->
+    </classes>
+  </test> <!-- suie 1 homePage(failed) -->
+  <test name="suie 1 pay user com.cyclos.tests(failed)">
+    <classes>
+      <class name="com.cyclos.suite1.PayUser_Page">
+        <methods>
+          <include name="checkRadioButtons"/>
+          <include name="dropdownTest"/>
+          <include name="docontactPayment"/>
+          <include name="paymentsTest"/>
+        </methods>
+      </class> <!-- com.cyclos.suite1.PayUser_Page -->
+      <class name="com.cyclos.suite2.Personal_Page">
+        <methods>
+          <include name="initialise"/>
+        </methods>
+      </class> <!-- com.cyclos.suite2.Personal_Page -->
+      <class name="com.cyclos.suite1.DataDrivenTests">
+        <methods>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.cyclos.suite1.DataDrivenTests -->
+    </classes>
+  </test> <!-- suie 1 pay user com.cyclos.tests(failed) -->
+  <test name="suie 2 data driven com.cyclos.tests(failed)">
+    <classes>
+      <class name="com.cyclos.suite2.SearchUserDataDrivenTest">
+        <methods>
+          <include name="searchUser1"/>
+        </methods>
+      </class> <!-- com.cyclos.suite2.SearchUserDataDrivenTest -->
+      <class name="com.cyclos.suite2.Personal_Page">
+        <methods>
+          <include name="initialise"/>
+        </methods>
+      </class> <!-- com.cyclos.suite2.Personal_Page -->
+      <class name="com.cyclos.suite1.DataDrivenTests">
+        <methods>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.cyclos.suite1.DataDrivenTests -->
+    </classes>
+  </test> <!-- suie 2 data driven com.cyclos.tests(failed) -->
+  <test name="suie 2 data driven com.cyclos.invaidLogin(failed)">
+    <classes>
+      <class name="com.cyclos.suite2.Personal_Page">
+        <methods>
+          <include name="initialise"/>
+        </methods>
+      </class> <!-- com.cyclos.suite2.Personal_Page -->
+      <class name="com.cyclos.suite1.DataDrivenTests">
+        <methods>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.cyclos.suite1.DataDrivenTests -->
+      <class name="com.cyclos.suite2.InvalidLoginParaMeter">
+        <methods>
+          <include name="doInVaidLoginParam"/>
+        </methods>
+      </class> <!-- com.cyclos.suite2.InvalidLoginParaMeter -->
+    </classes>
+  </test> <!-- suie 2 data driven com.cyclos.invaidLogin(failed) -->
+  <test name="suie 2 data driven com.cyclos.Personal_Page(failed)">
+    <classes>
+      <class name="com.cyclos.suite2.Personal_Page">
+        <methods>
+          <include name="changeProfilePic"/>
+          <include name="initialise"/>
+        </methods>
+      </class> <!-- com.cyclos.suite2.Personal_Page -->
+      <class name="com.cyclos.suite1.DataDrivenTests">
+        <methods>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.cyclos.suite1.DataDrivenTests -->
+    </classes>
+  </test> <!-- suie 2 data driven com.cyclos.Personal_Page(failed) -->
+</suite> <!-- Failed suite [Cyclos TestNG Project] -->
